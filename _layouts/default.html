@@ -62,10 +62,15 @@ $(function(){
     <div class="temp_foot">
       <div class="temp_center">
         <div class="bottom">
-          <div class="left"><p>Copyright &copy; 2017-2025 DongLab</p></div>
+          <div class="left"><p>Copyright &copy; 2017-<span id="currentYear"></span> DongLab</p></div>
           <div class="right"><p><span style="color:red">B</span>iomimetic and <span style="color:red">I</span>ntelligent <span style="color:red">R</span>obotics <span style="color:red">L</span>ab</p></div>
         </div>
       </div>
     </div>
+    <script>
+      // 获取当前年份并插入到页面中
+      const currentYear = new Date().getFullYear();
+      document.getElementById('currentYear').textContent = currentYear;
+    </script>
   </body>
 </html>
