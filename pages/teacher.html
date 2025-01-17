@@ -1,0 +1,40 @@
+---
+layout: pages
+permalink: /teacher/
+category: people
+category-en: People
+category-cn: 实验室人员
+type: 教师
+title: 教师
+keywords: 教师
+description: 教师
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>教师</h1>
+      <br>{% for post in site.categories["teacher"] %}
+      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <hr>
+      <br>
+      <table>
+        <tr>
+          <td rowspan="4"><p align="center"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></p></td>
+          <td><p>学历：{{ post.xueli }}</p></td>
+        </tr>
+        <tr>
+          <td><p>职称：{{ post.zhicheng }}</p></td>
+        </tr>
+        <tr>
+          <td><p>邮箱：{{ post.email }}</p></td>
+        </tr>
+        <tr>
+          <td><p>研究方向：{{ post.yanjiu }}</p></td>
+        </tr>
+      </table>
+      <br>
+      <hr>
+      <div style="margin-bottom:30px"></div>{% endfor %}
+    </div>
+  </div>
+</div>

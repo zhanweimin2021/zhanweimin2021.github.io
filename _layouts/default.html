@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/jquery.fancybox.min.css" type="text/css" rel="stylesheet" />
+    <script src="/assets/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    <script src="/assets/jquery.fancybox.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="head">
+      <div class="head_top">
+        <div class="head_center">
+          <div class="right">
+            <div class="top">
+              <ul>
+                <li><img src="/images/assets/cn.jpg" alt="中文版"><a href="{{ site.url }}">中文版</a></li>
+                <li><img src="/images/assets/en.jpg" alt="ENGLISH"><a href="{{ site.url }}">ENGLISH</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head_bottom">
+        <div class="head_nav">
+          <div class="nav_left">
+            <ul id="nav_left">
+              <li class="nLi {% if page.category == 'home' %}on{% endif %}"><a class="lia" href="{{ site.url }}">首页</a></li>
+              <li class="nLi {% if page.category == 'people' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/people/">实验室人员</a></h3></li>
+              <li class="nLi {% if page.category == 'research' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/research/">研究方向</a></h3></li>
+              <li class="nLi {% if page.category == 'publications' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/publications/">研究成果</a></h3>
+              <li class="nLi {% if page.category == 'equipment' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/equipment/">科研设备</a></h3>
+              <li class="nLi {% if page.category == 'cooperation' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/cooperation/">合作交流</a></h3>
+              <li class="nLi {% if page.category == 'join' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/join/">招生招聘</a></h3>
+              <li class="nLi {% if page.category == 'shared' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/shared/">资源共享</a></h3>
+              <li class="nLi {% if page.category == 'lab-news' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/lab-news/">实验室动态</a></h3>
+              <li class="nLi {% if page.category == 'contact' %}on{% endif %}"><h3><a class="lia" href="{{ site.url }}/contact/">联系我们</a></h3>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+$(function(){
+  $("#nav_left .nLi").hover(function(){
+  
+    $(this).find(".sub").stop(true,false).slideDown();
+    },function(){
+    $(this).find(".sub").stop(true,false).slideUp();
+    })  
+});
+</script>
+    <div class="height0"></div>
+    {{ content }}
+    <div class="height0"></div>{% if page.category == 'home' %}{% else %}
+    <div style="margin-top:50px"></div>{% endif %}
+    <div class="temp_foot">
+      <div class="temp_center">
+        <div class="bottom">
+          <div class="left"><p>Copyright &copy; 2011-2018 BIRL</p></div>
+          <div class="right"><p><span style="color:red">B</span>iomimetic and <span style="color:red">I</span>ntelligent <span style="color:red">R</span>obotics <span style="color:red">L</span>ab</p></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

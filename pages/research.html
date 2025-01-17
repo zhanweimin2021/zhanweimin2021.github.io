@@ -1,0 +1,66 @@
+---
+layout: pages
+permalink: /research/
+category: research
+category-en: Research
+category-cn: 研究方向
+type: 研究方向
+title: 研究方向
+keywords: 研究方向
+description: 研究方向
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>仿生软体</h1>{% for post in site.categories["soft-robotics"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+      <div style="margin-top:50px"></div>
+      <h1>模块攀爬</h1>{% for post in site.categories["module-climbing"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+      <div style="margin-top:50px"></div>
+      <h1>共融操作</h1>{% for post in site.categories["human-robotics"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em">{{ post.description }}</p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+      <div style="margin-top:50px"></div>
+      <h1>SLAM</h1>{% for post in site.categories["slam"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+      <div style="margin-top:50px"></div>
+      <h1>智能工业</h1>{% for post in site.categories["intelligent-industry"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+    </div>
+  </div>
+</div>

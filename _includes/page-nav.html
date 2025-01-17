@@ -1,0 +1,30 @@
+<div class="info_l" id="temp_l">
+    <div class="left_ul">
+      <ul class="ul">{% if page.category == 'people' %}
+        <li class="{% if page.type == '教师' %}this{% endif %}"><a title="教师" href="{{ site.url }}/teacher/">教师</a></li>
+        <li class="{% if page.type == '职工' %}this{% endif %}"><a title="职工" href="{{ site.url }}/staff/">职工</a></li>
+        <li class="{% if page.type == '博士生' %}this{% endif %}"><a title="博士生" href="{{ site.url }}/doctor/">博士生</a></li>
+        <li class="{% if page.type == '硕士生' %}this{% endif %}"><a title="硕士生" href="{{ site.url }}/master/">硕士生</a></li>
+        <li class="{% if page.type == '毕业生' %}this{% endif %}"><a title="毕业生" href="{{ site.url }}/graduate/">毕业生</a></li>{% endif %}{% if page.category == 'equipment' %}{% for post in site.categories["equipment"] %}
+        <li><a title="{{ post.title }}" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}{% endif %}{% if page.category == 'research' %}
+        <li class="{% if page.type == '仿生软体' %}this{% endif %}"><a title="仿生软体" href="{{ site.url }}/soft-robotics/">仿生软体</a></li>
+        <li class="{% if page.type == '模块攀爬' %}this{% endif %}"><a title="模块攀爬" href="{{ site.url }}/module-climbing/">模块攀爬</a></li>
+        <li class="{% if page.type == '共融操作' %}this{% endif %}"><a title="共融操作" href="{{ site.url }}/human-robotics/">共融操作</a></li>
+        <li class="{% if page.type == 'SLAM' %}this{% endif %}"><a title="SLAM" href="{{ site.url }}/slam/">SLAM</a></li>
+        <li class="{% if page.type == '智能工业' %}this{% endif %}"><a title="智能工业" href="{{ site.url }}/intelligent-industry/">智能工业</a></li>{% endif %}{% if page.category == 'publications' %}
+        <li class="{% if page.type == '2018年' %}this{% endif %}"><a title="2018年" href="{{ site.url }}/2018/">2018年</a></li>
+        <li class="{% if page.type == '2017年' %}this{% endif %}"><a title="2017年" href="{{ site.url }}/2017/">2017年</a></li>
+        <li class="{% if page.type == '2016年' %}this{% endif %}"><a title="2016年" href="{{ site.url }}/2016/">2016年</a></li>
+        <li class="{% if page.type == '2015年' %}this{% endif %}"><a title="2015年" href="{{ site.url }}/2015/">2015年</a></li>
+        <li class="{% if page.type == '2015年之前' %}this{% endif %}"><a title="2015年之前" href="{{ site.url }}/before-2015/">2015年之前</a></li>{% endif %}{% if page.category == 'cooperation' %}
+        <li class="{% if page.type == '项目合作' %}this{% endif %}"><a title="项目合作" href="{{ site.url }}/project-cooperation/">项目合作</a></li>
+        <li class="{% if page.type == '学术交流' %}this{% endif %}"><a title="学术交流" href="{{ site.url }}/academic-exchange/">学术交流</a></li>{% endif %}{% if page.category == 'join' %}
+        <li class="{% if page.type == '招生' %}this{% endif %}"><a title="招生" href="{{ site.url }}/recruit-students/">招生</a></li>
+        <li class="{% if page.type == '招聘' %}this{% endif %}"><a title="招聘" href="{{ site.url }}/recruit/">招聘</a></li>{% endif %}{% if page.category == 'shared' %}
+        <li class="{% if page.type == 'BzRos' %}this{% endif %}"><a title="BzRos" href="{{ site.url }}/bzros/">BzRos</a></li>{% endif %}{% if page.category == 'lab-news' %}
+        <li class="{% if page.type == '学习交流' %}this{% endif %}"><a title="学习交流" href="{{ site.url }}/learning-exchange/">学习交流</a></li>
+        <li class="{% if page.type == '文娱活动' %}this{% endif %}"><a title="文娱活动" href="{{ site.url }}/entertainment/">文娱活动</a></li>{% endif %}{% if page.category == 'contact' %}
+        <li class="{% if page.type == '联系我们' %}this{% endif %}"><a title="联系方式" href="{{ site.url }}/contact/">联系我们</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>

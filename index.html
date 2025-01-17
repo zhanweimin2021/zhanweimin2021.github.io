@@ -1,0 +1,133 @@
+---
+layout: default
+category: home
+full_title: BIRL仿生与智能机器人实验室
+---
+<div class="main_img">
+  <div class="main_img_c">
+    <div class="bd">
+      <div class="nav_shadow"></div>
+      <ul>
+        <li><a href="{{ site.url }}/soft-robotics/"><img src="/images/home/billboard-1.jpg"></a></li>
+        <li><a href="{{ site.url }}/module-climbing/"><img src="/images/home/billboard-2.jpg"></a></li>
+        <li><a href="{{ site.url }}/human-robotics/"><img src="/images/home/billboard-3.jpg"></a></li>
+        <li><a href="{{ site.url }}/slam/"><img src="/images/home/billboard-4.jpg"></a></li>
+        <li><a href="{{ site.url }}/intelligent-industry/"><img src="/images/home/billboard-5.jpg"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+jQuery(".main_img_c").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,delayTime:700,interTime:5000});
+</script> 
+<div class="main_doc">
+  <div class="main_doc_center">
+    <div class="main_about_us" style="margin-bottom:28px">
+      <div class="about_top">
+        <div class="app_top">
+          <div class="app_top"><p>实验室简介<span>ABOUT BIRL</span><span style="margin-right:458px"></span>实验室动态<span>LAB NEWS</span></p></div>
+        </div>
+      </div>
+      <div class="about_bottom">
+        <div class="center" style="text-indent:2em"><p><b>仿生与智能机器人实验室 (Biomimetics and Intelligent Robotics Lab, abbr. BIRL) </b>致力于研究仿生、SLAM及共融操作等方面的相关理论和开发不同类型的机器人系统，包括模块化机器人、少自由度机器人、服务机器人、教育娱乐机器人和其他自动化设备等。秉着“顶天”与“立地”的发展方略，以实现前瞻性和实用性的特种应用和工业应用。博文自动化科技有限公司是一个实验室与企业相结合，连接实验室与市场的港口，将实验室的理论技术和设备系统推向市场，服务实业，同时也以实际的生产服务需求推进实验室各项研究工作。实验室拥有一名外籍院士、多名教授、副教授和讲师，以及50名左右的硕博士研究生，并持有国内外主要的先进机器人系统，整体的科研实力雄厚。欢迎各届人士咨询与合作。</p></div>
+        <div class="right">
+          <div class="bd">
+            <ul class="infoList" id="infoList">{% for post in site.categories["learning-exchange"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}{% for post in site.categories["entertainment"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}{% for post in site.categories["academic-exchange"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}{% for post in site.categories["project-cooperation"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+          jQuery(".about_bottom .right").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50,delayTime:1000});
+        </script>
+      </div>
+    </div>
+    <div class="main_app">
+      <div class="app_top">
+        <div class="app_top"><p>研究方向<span>RESEARCH DIRECTION</span></p></div>
+      </div>
+      <div class="app_bottom">
+        <ul>
+          <li class="tran_all">
+            <a href="{{ site.url }}/soft-robotics/" class="tran_all">
+              <img src="/images/research/soft-robotics.jpg" alt="仿生软体">
+              <p class="pt">仿生软体</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <a href="{{ site.url }}/module-climbing/" class="tran_all">
+              <img src="/images/research/module-climbing.jpg" alt="模块攀爬">
+              <p class="pt">模块攀爬</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <a href="{{ site.url }}/human-robotics/" class="tran_all">
+              <img src="/images/research/human-robotics.jpg" alt="共融操作">
+              <p class="pt">共融操作</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <a href="{{ site.url }}/slam/" class="tran_all">
+              <img src="/images/research/slam.jpg" alt="SLAM">
+              <p class="pt">SLAM</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <a href="{{ site.url }}/intelligent-industry/" class="tran_all">
+              <img src="/images/research/intelligent-industry.jpg" alt="智能工业">
+              <p class="pt">智能工业</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>    
+  </div>
+</div>
