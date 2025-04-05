@@ -9,8 +9,6 @@
         <li><a title="{{ post.title }}" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}{% endif %}{% if page.category == 'research' %}
         <li class="{% if page.type == '仿生软体' %}this{% endif %}"><a title="仿生软体" href="{{ site.url }}/soft-robotics/">仿生软体</a></li>
         <li class="{% if page.type == '模块攀爬' %}this{% endif %}"><a title="模块攀爬" href="{{ site.url }}/module-climbing/">模块攀爬</a></li>
-        <li class="{% if page.type == '共融操作' %}this{% endif %}"><a title="共融操作" href="{{ site.url }}/human-robotics/">共融操作</a></li>
-        <li class="{% if page.type == 'SLAM' %}this{% endif %}"><a title="SLAM" href="{{ site.url }}/slam/">SLAM</a></li>
         <li class="{% if page.type == '智能工业' %}this{% endif %}"><a title="智能工业" href="{{ site.url }}/intelligent-industry/">智能工业</a></li>{% endif %}{% if page.category == 'publications' %}
         <li class="{% if page.type == '2018年' %}this{% endif %}"><a title="2018年" href="{{ site.url }}/2018/">2018年</a></li>
         <li class="{% if page.type == '2017年' %}this{% endif %}"><a title="2017年" href="{{ site.url }}/2017/">2017年</a></li>
