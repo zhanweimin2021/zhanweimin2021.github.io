@@ -12,9 +12,9 @@ description: 研究方向
 <div class="n_list">
   <div class="n_list_c">
     <div class="n_right_bottom">
-      <!-- 仿生软体 -->
-      <h1>仿生软体</h1>
-      {% for post in site.categories["soft-robotics"] %}
+      <!-- 模块攀爬 -->
+      <h1>模块攀爬</h1>
+      {% for post in site.categories["module-climbing"] %}
       <div style="margin-top:30px"></div>
       <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <br>
@@ -25,10 +25,10 @@ description: 研究方向
       <hr>
       {% endfor %}
 
-      <!-- 模块攀爬 -->
+      <!-- 仿生软体 -->
       <div style="margin-top:50px"></div>
-      <h1>模块攀爬</h1>
-      {% for post in site.categories["module-climbing"] %}
+      <h1>仿生软体</h1>
+      {% for post in site.categories["soft-robotics"] %}
       <div style="margin-top:30px"></div>
       <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <br>
