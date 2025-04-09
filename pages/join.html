@@ -18,23 +18,7 @@ description: 招生招聘
       <div style="margin-top:30px"></div>
       <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <br>
-      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
-      <br>
-      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
-      <div style="margin-top:30px"></div>
-      <hr>
-      {% endfor %}
-
-      <!-- 招生 -->
-      <div style="margin-top:50px"></div>
-      <h1>招生</h1>
-      {% for post in site.categories["recruit-students"] %}
-      <div style="margin-top:30px"></div>
-      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-      <br>
-      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
-      <br>
-      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <p style="text-indent:2em">{{ post.description }}</p>
       <div style="margin-top:30px"></div>
       <hr>
       {% endfor %}
