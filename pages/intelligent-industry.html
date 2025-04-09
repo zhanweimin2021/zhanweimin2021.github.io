@@ -1,0 +1,26 @@
+---
+layout: pages
+permalink: /intelligent-industry/
+category: research
+category-en: Research
+category-cn: 研究方向
+type: 智能工业
+title: 智能工业
+keywords: 智能工业
+description: 智能工业
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>智能工业</h1>{% for post in site.categories["intelligent-industry"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+    </div>
+  </div>
+</div>

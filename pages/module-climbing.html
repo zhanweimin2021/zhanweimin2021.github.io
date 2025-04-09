@@ -1,0 +1,26 @@
+---
+layout: pages
+permalink: /module-climbing/
+category: research
+category-en: Research
+category-cn: 研究方向
+type: 模块攀爬
+title: 模块攀爬
+keywords: 模块攀爬
+description: 模块攀爬
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>模块攀爬</h1>{% for post in site.categories["module-climbing"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+    </div>
+  </div>
+</div>

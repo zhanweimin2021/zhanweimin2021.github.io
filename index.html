@@ -1,0 +1,121 @@
+---
+layout: default
+category: home
+full_title: 植物基因表达调控及豆科植物发育
+---
+<div class="main_img">
+  <div class="main_img_c">
+    <div class="bd">
+      <div class="nav_shadow"></div>
+      <ul>
+        <li><a href="{{ site.url }}/soft-robotics/"><img src="/images/home/billboard-1.jpg"></a></li>
+        <li><a href="{{ site.url }}/module-climbing/"><img src="/images/home/billboard-2.jpg"></a></li>
+        <li><a href="{{ site.url }}/human-robotics/"><img src="/images/home/billboard-3.jpg"></a></li>
+        <li><a href="{{ site.url }}/slam/"><img src="/images/home/billboard-4.jpg"></a></li>
+        <li><a href="{{ site.url }}/intelligent-industry/"><img src="/images/home/billboard-5.jpg"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+jQuery(".main_img_c").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,delayTime:700,interTime:5000});
+</script> 
+<div class="main_doc">
+  <div class="main_doc_center">
+    <div class="main_about_us" style="margin-bottom:28px">
+      <div class="about_top">
+        <div class="app_top">
+          <div class="app_top"><p>实验室简介<span>ABOUT BIRL</span><span style="margin-right:458px"></span>实验室动态<span>LAB NEWS</span></p></div>
+        </div>
+      </div>
+      <div class="about_bottom">
+        <div class="center" style="text-indent:2em"><p><b>植物基因表达调控及豆科植物发育 (Biomimetics and Intelligent Robotics Lab, abbr. BIRL) </b>从事大豆重要性状调控网络与分子育种、植物对环境的适应性、植物表观遗传与转录调控的研究和人类健康的高通量检测方法。建立了RNA聚合酶II介导的植物新生链RNA合成的研究方法；揭示了热胁迫和热记忆中植物转录的动态变化；在体外重组植物microRNA的加工过程；初步构建豆科花模式建成的遗传框架等。主要工作发表于Nature Plants、Genome Biology、PNAS、Plant Physiol等国际期刊。</p></div>
+        <div class="right">
+          <div class="bd">
+            <ul class="infoList" id="infoList">{% for post in site.categories["learning-exchange"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}{% for post in site.categories["entertainment"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}{% for post in site.categories["academic-exchange"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}{% for post in site.categories["project-cooperation"] %}
+              <li class="li">
+                <div class="date">
+                  <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+                  <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+                </div>
+                <div class="text">
+                  <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                  <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+                </div>
+              </li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+          jQuery(".about_bottom .right").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50,delayTime:1000});
+        </script>
+      </div>
+    </div>
+    <div class="main_app">
+      <div class="app_top">
+        <div class="app_top"><p>研究方向<span>RESEARCH DIRECTION</span></p></div>
+      </div>
+      <div class="app_bottom">
+        <ul style="display: flex; justify-content: space-evenly; align-items: center; padding: 0; list-style: none;">
+          <li class="tran_all" style="flex: 1; text-align: center;">
+            <a href="{{ site.url }}/soft-robotics/" class="tran_all">
+              <img src="/images/research/soft-robotics.jpg" alt="植物新生链RNA合成的表观遗传调控" style="max-width: 100%; height: auto;">
+              <p class="pt">植物新生链RNA合成的表观遗传调控</p>
+            </a>
+          </li>
+          <li class="tran_all" style="flex: 1; text-align: center;">
+            <a href="{{ site.url }}/module-climbing/" class="tran_all">
+              <img src="/images/research/module-climbing.jpg" alt="植物小RNA的加工过程" style="max-width: 100%; height: auto;">
+              <p class="pt">植物小RNA的加工过程</p>
+            </a>
+          </li>
+          <li class="tran_all" style="flex: 1; text-align: center;">
+            <a href="{{ site.url }}/human-robotics/" class="tran_all">
+              <img src="/images/research/human-robotics.jpg" alt="豆科重要农艺性状与发育的调控网络" style="max-width: 100%; height: auto;">
+              <p class="pt">豆科重要农艺性状与发育的调控网络</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>    
+  </div>
+</div>

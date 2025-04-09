@@ -1,0 +1,33 @@
+---
+layout: pages
+permalink: /project-cooperation/
+category: cooperation
+category-en: Cooperation
+category-cn: 合作交流
+type: 项目合作
+title: 项目合作
+keywords: 项目合作
+description: 项目合作
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>项目合作</h1>{% for post in site.categories["project-cooperation"] %}
+      <br>
+      <table>
+        <tr>
+          <td rowspan="3"><p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p></td>
+          <td><h3 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3></td>
+        </tr>
+        <tr>
+          <td><p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p></td>
+        </tr>
+        <tr>
+          <td><p align="right"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date:"%Y-%m-%d" }}</a></p></td>
+        </tr>
+      </table>
+      <br>
+      <hr>{% endfor %}
+    </div>
+  </div>
+</div>

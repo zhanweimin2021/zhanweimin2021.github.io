@@ -1,0 +1,50 @@
+---
+layout: pages
+permalink: /lab-news/
+category: lab-news
+category-en: Lab News
+category-cn: 实验室动态
+type: 实验室动态
+title: 实验室动态
+keywords: 实验室动态
+description: 实验室动态
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>学习交流</h1>{% for post in site.categories["learning-exchange"] %}
+      <br>
+      <table>
+        <tr>
+          <td rowspan="3"><p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p></td>
+          <td><h3 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3></td>
+        </tr>
+        <tr>
+          <td><p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p></td>
+        </tr>
+        <tr>
+          <td><p align="right"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date:"%Y-%m-%d" }}</a></p></td>
+        </tr>
+      </table>
+      <br>
+      <hr>{% endfor %}
+      <div style="margin-top:50px"></div>
+      <h1>文娱活动</h1>{% for post in site.categories["entertainment"] %}
+      <br>
+      <table>
+        <tr>
+          <td rowspan="3"><p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p></td>
+          <td><h3 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3></td>
+        </tr>
+        <tr>
+          <td><p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p></td>
+        </tr>
+        <tr>
+          <td><p align="right"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date:"%Y-%m-%d" }}</a></p></td>
+        </tr>
+      </table>
+      <br>
+      <hr>{% endfor %}
+    </div>
+  </div>
+</div>

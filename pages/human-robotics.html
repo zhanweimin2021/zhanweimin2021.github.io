@@ -1,0 +1,26 @@
+---
+layout: pages
+permalink: /human-robotics/
+category: research
+category-en: Research
+category-cn: 研究方向
+type: 共融操作
+title: 共融操作
+keywords: 共融操作
+description: 共融操作
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>共融操作</h1>{% for post in site.categories["human-robotics"] %}
+      <div style="margin-top:30px"></div>
+      <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <br>
+      <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p>
+      <br>
+      <p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+      <div style="margin-top:30px"></div>
+      <hr>{% endfor %}
+    </div>
+  </div>
+</div>

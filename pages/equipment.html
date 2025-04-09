@@ -1,0 +1,31 @@
+---
+layout: pages
+permalink: /equipment/
+category: equipment
+category-en: Equipment
+category-cn: 科研设备
+type: 科研设备
+title: 科研设备
+keywords: 科研设备
+description: 科研设备
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">{% for post in site.categories["equipment"] %}
+      <h2>{{ post.title }}</h2>
+      <br>
+      <table>
+        <tr>
+          <td rowspan="2"><p align="center"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></p></td>
+          <td><p style="text-indent:2em">{{ post.description }}</p></td>
+        </tr>
+        <tr>
+          <td><p align="right"><a href="{{ site.url }}{{ post.url }}">更多 >></a></p></td>
+        </tr>
+      </table>
+      <br>
+      <hr>
+      <div style="margin-bottom:50px"></div>{% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+---
+layout: pages
+permalink: /recruit-students/
+category: join
+category-en: Join
+category-cn: 招生招聘
+type: 招生
+title: 招生
+keywords: 招生
+description: 招生
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>招生</h1>
+      <ul>{% for post in site.categories["recruit-students"] %}
+        <li>
+          <div class="n_temp_r_b1"><img src="/images/assets/2-000.gif"><h4>[{{ post.type }}]</h4><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></div>
+          <div class="n_temp_r_b2"><p>{{ post.date | date:"%Y-%m-%d" }}</p></div>
+        </li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
