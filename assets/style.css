@@ -308,7 +308,7 @@ table{cellspacing:0;cellpadding:0;}
 .n_temp_r_b1 h4{display:inline-block; font-size:14px; font-weight:normal;color:#666; }
 .n_temp_r_b1 p{ padding-left:10px; color:#5A5A5A;}
 .n_temp_r_b1 p:hover a{color:#3477c8;}
-.n_temp_r_b2{float:right; width:50px; overflow:hidden;}
+.n_temp_r_b2{float:right; width:20px; overflow:hidden;}
 .n_temp_r_b2 p{ display:inline-block;  text-align:right;  font-size:12px; color:#acacac; font-weight:normal;}
 /***** news list  ***********/
 .news_text{ position:relative; margin-top:20px;margin-left:70px; width:730px;height:auto;}
