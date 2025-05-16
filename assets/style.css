@@ -303,7 +303,7 @@ table{cellspacing:0;cellpadding:0;}
 .n_list{ position:relative; width:730px;height:auto;}
 .n_list_c{ padding:10px 0 20px 0; width:730px; height:auto; }
 .n_list li{ width:730px; height:24px; padding-top:18px; border-bottom:1px dashed #D6D6D6; overflow:hidden;}
-.n_temp_r_b1{float:left; width:650px; overflow:hidden;}
+.n_temp_r_b1{float:left; width:680px; overflow:hidden;}
 .n_temp_r_b1 img,.n_temp_r_b1 h4,.n_temp_r_b1 p{float:left;display:inline-block; font-size:14px; font-weight:normal;}
 .n_temp_r_b1 h4{display:inline-block; font-size:14px; font-weight:normal;color:#666; }
 .n_temp_r_b1 p{ padding-left:10px; color:#5A5A5A;}
