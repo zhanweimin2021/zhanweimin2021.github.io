@@ -12,39 +12,17 @@ description: 实验室动态
 <div class="n_list">
   <div class="n_list_c">
     <div class="n_right_bottom">
-      <h1>学习交流</h1>{% for post in site.categories["learning-exchange"] %}
-      <br>
-      <table>
-        <tr>
-          <td rowspan="3"><p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p></td>
-          <td><h3 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3></td>
-        </tr>
-        <tr>
-          <td><p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p></td>
-        </tr>
-        <tr>
-          <td><p align="right"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date:"%Y-%m-%d" }}</a></p></td>
-        </tr>
-      </table>
-      <br>
-      <hr>{% endfor %}
-      <div style="margin-top:50px"></div>
-      <h1>文娱活动</h1>{% for post in site.categories["entertainment"] %}
-      <br>
-      <table>
-        <tr>
-          <td rowspan="3"><p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg"></a></p></td>
-          <td><h3 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3></td>
-        </tr>
-        <tr>
-          <td><p style="text-indent:2em"><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p></td>
-        </tr>
-        <tr>
-          <td><p align="right"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date:"%Y-%m-%d" }}</a></p></td>
-        </tr>
-      </table>
-      <br>
-      <hr>{% endfor %}
+      <!-- 给标题加下外边距 -->
+      <h1 style="margin-bottom: 2em;">实验室动态</h1>
+
+      <p class="shared-description">
+        实验室动态专栏旨在第一时间呈现团队的最新风貌与成果。  
+        “学习交流”板块记录各类学术讲座、研讨会以及师生项目合作，让科研思想激荡碰撞；  
+        “文娱活动”板块则分享团队建设、文体比赛和节日聚会等精彩瞬间，调剂紧张工作氛围。  
+        在这里，你既能收获前沿科学资讯，也能尽情参与户外徒步、瑜伽冥想等身心拓展活动，  
+        感受科研与生活、深度思考与快乐身心的双重滋养。  
+        欢迎关注，共同见证实验室的成长与活力！
+      </p>
     </div>
   </div>
 </div>
