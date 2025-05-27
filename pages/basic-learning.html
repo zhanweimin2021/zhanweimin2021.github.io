@@ -1,0 +1,24 @@
+---
+layout: pages
+permalink: /basic-learning/
+category: bzros
+category-en: bzros
+category-cn: 基础学习
+type: 基础学习
+title: 基础学习
+keywords: 基础学习
+description: 基础学习
+---
+<div class="n_list">
+  <div class="n_list_c">
+    <div class="n_right_bottom">
+      <h1>基础学习</h1>
+      <ul>{% for post in site.categories["basic-learning"] %}
+        <li>
+          <div class="n_temp_r_b1"><img src="/images/assets/2-000.gif"><h4>[{{ post.type }}]</h4><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></div>
+          <div class="n_temp_r_b2"><p>{{ post.date | date:"%Y-%m-%d" }}</p></div>
+        </li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
